@@ -3,7 +3,7 @@ name: 'GitHub Actions Weather Bot'
 on:
   push:
   schedule:
-    - cron: '0 13 * * *'
+    - cron: '16 15 * * *'
 
 jobs:
   bot:
@@ -25,5 +25,5 @@ jobs:
           subject: Guangzhou Weather Report (${{env.REPORT_DATE}})
           body: file://result.html
           to: 1157512594@qq.com
-          from: GitHub Actions
+          from: Weather Action
           content_type: text/html
